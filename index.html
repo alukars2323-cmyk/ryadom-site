@@ -1,67 +1,1201 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Рядом — информация, упражнения для саморефлексии и поддержка для молодых людей."><title>Рядом — место для себя</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:#faf8f2;color:#253e35;font:17px/1.65 system-ui,Segoe UI,sans-serif}a{color:#315f4d;text-underline-offset:4px}button,input,textarea,select{font:inherit}button,.button{cursor:pointer;border:1px solid #315f4d;background:#315f4d;color:white;padding:12px 21px;border-radius:12px;display:inline-block;text-decoration:none;font-weight:600}button.secondary,.secondary{background:transparent;color:#315f4d}button:hover,.button:hover{filter:brightness(.94)}:focus-visible{outline:3px solid #bd7540;outline-offset:4px}header{position:sticky;top:0;background:#faf8f2f5;border-bottom:1px solid #dddcd1;z-index:10}nav{max-width:1200px;margin:auto;padding:17px 24px;display:flex;gap:24px;align-items:center}nav a{text-decoration:none;font-size:14px}nav .logo{font-size:28px;font-weight:800;margin-right:auto}main{max-width:1150px;margin:auto;padding:0 24px}section{padding:65px 0;border-bottom:1px solid #deded2}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:700;color:#687c60}h1{font-size:clamp(38px,5vw,66px);line-height:1.12;letter-spacing:-2px;margin:22px 0}h2{font-size:clamp(29px,4vw,40px);line-height:1.2;margin:12px 0 22px;letter-spacing:-1px}h3{font-size:22px;line-height:1.3}p{margin:12px 0 20px}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:45px;align-items:center;min-height:560px}.hero svg{width:100%;border-radius:25px;box-shadow:18px 18px 0 #e8ebdf}.actions{display:flex;gap:12px;flex-wrap:wrap}.note{padding:22px 26px;border:1px solid #b7c6ac;border-left:5px solid #6e8c62;background:#eef1e6;border-radius:14px;margin:22px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:#fffdf8;border:1px solid #d9ded1;border-radius:22px;overflow:hidden}.card svg{width:100%;display:block}.card-body,.panel{padding:25px}.panel{background:#fffdf8;border:1px solid #d9ded1;border-radius:22px}details{border-top:1px solid #d9ded1;padding:15px 0}summary{cursor:pointer;font-weight:650}input[type=search],textarea,select{width:100%;padding:12px;border:1px solid #a4b59f;border-radius:10px;background:#fffdf8;color:#253e35}textarea{resize:vertical;min-height:140px}fieldset{border:0;border-top:1px solid #deded2;margin:18px 0;padding:17px 0}legend{font-weight:650;padding:0 5px}label.option{display:block;margin:8px 0;padding:9px 12px;background:#f0f3e9;border-radius:9px;cursor:pointer}input[type=radio],input[type=checkbox]{accent-color:#315f4d;margin-right:9px}.result{background:#edf2e6;padding:18px;border-radius:12px;margin-top:20px}.result:empty{display:none}.small{font-size:14px;color:#657361}.timer{font-size:58px;font-variant-numeric:tabular-nums;margin:20px 0;color:#315f4d}.tag{border:1px solid #bdc8b3;border-radius:20px;padding:6px 13px;font-size:13px;display:inline-block;margin:5px}.hidden,[hidden]{display:none!important}footer{padding:35px 24px;max-width:1150px;margin:auto;font-size:14px}.section-head{max-width:740px}.search{max-width:530px;margin:25px 0}.faq{max-width:850px}.counter{font-size:14px;color:#657361}@media(max-width:850px){.grid{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr;gap:20px;padding-top:40px}.hero svg{max-height:300px}nav{flex-wrap:wrap;gap:10px 18px}nav .logo{width:100%;margin:0}.two{grid-template-columns:1fr}}@media(max-width:560px){.grid{grid-template-columns:1fr}main{padding:0 18px}section{padding:40px 0}nav{padding:10px 18px}.card-body,.panel{padding:20px}h1{letter-spacing:-1px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body>
-<header><nav aria-label="Основная навигация"><a class="logo" href="#home">Рядом<span style="color:#9caa80">.</span></a><a href="#about">О проекте</a><a href="#problems">Темы</a><a href="#self-help">Самопомощь</a><a href="#resources">Материалы</a><a href="#help">Найти поддержку ↗</a></nav></header><main>
-<section id="home" class="hero"><div><span class="eyebrow">МАЛЕНЬКИЕ ШАГИ · БОЛЬШЕ ЗАБОТЫ</span><h1>Тебе не обязательно справляться одному.</h1><p>Место, где можно остановиться, разобраться в своих мыслях и выбрать следующий маленький шаг.</p><p class="small">Информационный проект для людей от 15 до 25 лет.</p><div class="actions"><a class="button" href="#self-help">Начать с себя →</a><a class="button secondary" href="#problems">Исследовать темы</a></div></div><div><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#adc6b1"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><p class="small">Не нужно решать всё сразу. Можно начать с одной вещи.</p></div></section>
-<section id="about"><span class="eyebrow">ПОЧЕМУ «РЯДОМ»</span><h2>Поддержка начинается с внимания к себе</h2><div class="two"><div><p>Учёба, поступление, новые знакомства и первые самостоятельные решения иногда приносят много напряжения. Здесь собраны понятные материалы о повседневных эмоциональных трудностях.</p><p>Школьник перед экзаменами, студент с большой нагрузкой, человек, которому одиноко, — каждый может найти тему, которая ему близка.</p></div><div class="note"><strong>Самопомощь — это забота о себе.</strong><p>В этом проекте она означает простые действия: записать мысли, сделать паузу, поговорить с человеком, которому доверяешь. Она не означает самолечение.</p><p class="small">Сайт не ставит диагнозов и не заменяет психолога или врача.</p></div></div></section>
-<section id="problems"><div class="section-head"><span class="eyebrow">ИССЛЕДОВАТЬ</span><h2>Что сейчас тебе близко?</h2><p>Выбери тему и раскрой карточку. Отдельные признаки не означают наличие расстройства.</p></div><div class="search"><label for="search">Поиск по темам</label><input type="search" id="search" placeholder="Например: учёба, тревожность, отдых"><p class="counter" id="count" aria-live="polite">Показано тем: 6</p></div><div class="grid"><article class="card topic" data-title="Стресс" id="stress"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#adc6b1"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ТЕМА 01</span><h3>Стресс</h3><p>
-                    Стресс — это состояние напряжения, которое
-                    может возникать в ответ на сложные или требующие
-                    адаптации ситуации.
-                </p><p>
-                    Для молодых людей источниками стресса могут быть
-                    учебная нагрузка, экзамены, поступление,
-                    конфликты и изменения привычного образа жизни.
-                </p><details><summary>Что можно попробовать</summary><p>Выбери одну посильную задачу и оставь место для перерыва.</p><a href="#self-help">Перейти к упражнениям →</a><p><a href="https://www.who.int/ru/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">Материал ВОЗ · на русском ↗</a></p></details></div></article><article class="card topic" data-title="Тревожность" id="anxiety"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#edc6a5"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ТЕМА 02</span><h3>Тревожность</h3><p>
-                    Тревожность связана с переживанием беспокойства,
-                    напряжения или ожиданием возможных трудностей.
-                </p><p>
-                    Такие переживания могут возникать перед экзаменами,
-                    выступлениями, важными событиями или в ситуациях
-                    неопределенности.
-                </p><details><summary>Что можно попробовать</summary><p>Запиши, что известно точно, а что пока является предположением.</p><a href="#self-help">Перейти к упражнениям →</a><p><a href="https://www.who.int/ru/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">Материал ВОЗ · на русском ↗</a></p></details></div></article><article class="card topic" data-title="Усталость и выгорание" id="burnout"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#aebfd5"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ТЕМА 03</span><h3>Усталость и выгорание</h3><p>
-                    Продолжительная нагрузка без достаточного
-                    восстановления может сопровождаться сильной
-                    усталостью и снижением интереса к привычным делам.
-                </p><p>
-                    Поэтому важно соблюдать баланс между нагрузкой,
-                    отдыхом и восстановлением.
-                </p><details><summary>Что можно попробовать</summary><p>Подумай, какую нагрузку можно уменьшить и кому можно рассказать об усталости.</p><a href="#self-help">Перейти к упражнениям →</a><p><a href="https://www.who.int/ru/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">Материал ВОЗ · на русском ↗</a></p></details></div></article><article class="card topic" data-title="Проблемы с мотивацией" id="motivation"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#d0bbd5"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ТЕМА 04</span><h3>Проблемы с мотивацией</h3><p>
-                    Снижение мотивации может проявляться в том,
-                    что человеку становится сложно начинать задачи,
-                    концентрироваться или доводить дела до конца.
-                </p><p>
-                    В таких ситуациях может помочь разделение
-                    большой задачи на несколько небольших этапов.
-                </p><details><summary>Что можно попробовать</summary><p>Определи первый маленький шаг: например, открыть конспект и прочитать один абзац.</p><a href="#self-help">Перейти к упражнениям →</a><p><a href="https://www.who.int/ru/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">Материал ВОЗ · на русском ↗</a></p></details></div></article><article class="card topic" data-title="Проблемы общения" id="communication"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#e6cf8e"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ТЕМА 05</span><h3>Проблемы общения</h3><p>
-                    Взаимоотношения с друзьями, одногруппниками,
-                    одноклассниками, преподавателями и близкими
-                    могут становиться источником стресса.
-                </p><p>
-                    Важно уметь выражать свои мысли, обсуждать
-                    возникающие проблемы и уважать границы
-                    других людей.
-                </p><details><summary>Что можно попробовать</summary><p>Можно начать разговор словами: «Мне сейчас непросто. Ты можешь меня выслушать?»</p><a href="#self-help">Перейти к упражнениям →</a><p><a href="https://www.unicef.org/parenting/mental-health-and-well-being" target="_blank" rel="noopener noreferrer">Материал ЮНИСЕФ · на английском ↗</a></p></details></div></article><article class="card topic" data-title="Баланс учёбы и отдыха" id="balance"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#abd0cb"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ТЕМА 06</span><h3>Баланс учёбы и отдыха</h3><p>
-                    Постоянная занятость без достаточного времени
-                    для отдыха может приводить к накоплению усталости.
-                </p><p>
-                    Планирование времени позволяет распределять
-                    учебные задачи и оставлять время для отдыха,
-                    сна и личных интересов.
-                </p><details><summary>Что можно попробовать</summary><p>Запланируй не только дела, но и время без учебных задач.</p><a href="#self-help">Перейти к упражнениям →</a><p><a href="https://www.unicef.org/parenting/mental-health-and-well-being" target="_blank" rel="noopener noreferrer">Материал ЮНИСЕФ · на английском ↗</a></p></details></div></article></div><p id="empty" hidden>Такой темы пока нет. Попробуй «отдых», «общение» или «стресс».</p></section>
-<section id="self-help"><span class="eyebrow">ПОПРОБОВАТЬ</span><h2>Небольшие действия для себя</h2><p>Выбери упражнение, которое подходит тебе сейчас. Любое из них можно остановить.</p><div class="note">Тесты ниже — авторские вопросы для саморефлексии, а не проверенные медицинские шкалы. Они помогают выбрать действие, не оценивают здоровье и не определяют диагноз. Ответы и заметки не отправляются на сервер и исчезают после обновления страницы.</div><div class="two">
-<form id="needs" class="panel"><span class="eyebrow">ТЕСТ 01 · 3 ВОПРОСА</span><h3>Что мне сейчас нужно?</h3><p>Выбери вариант, который ближе именно сегодня.</p><fieldset><legend>1. Что больше всего занимает твои мысли?</legend><label class="option"><input required type="radio" name="n0" value="0">Много дел и непонятно, с чего начать</label><label class="option"><input required type="radio" name="n0" value="1">Усталость и желание сделать паузу</label><label class="option"><input required type="radio" name="n0" value="2">Хочется с кем-нибудь поговорить</label></fieldset><fieldset><legend>2. Что сейчас кажется наиболее полезным?</legend><label class="option"><input required type="radio" name="n1" value="0">Понятный маленький план</label><label class="option"><input required type="radio" name="n1" value="1">Немного спокойного времени</label><label class="option"><input required type="radio" name="n1" value="2">Разговор без оценок</label></fieldset><fieldset><legend>3. Какой шаг проще сделать прямо сейчас?</legend><label class="option"><input required type="radio" name="n2" value="0">Записать одну задачу</label><label class="option"><input required type="radio" name="n2" value="1">Отложить дела на несколько минут</label><label class="option"><input required type="radio" name="n2" value="2">Написать человеку, которому доверяю</label></fieldset><div class="actions"><button type="submit">Показать мой шаг</button><button type="reset" class="secondary">Сбросить</button></div><div class="result" aria-live="polite"></div></form><form id="rest" class="panel"><span class="eyebrow">ТЕСТ 02 · 4 ВОПРОСА</span><h3>Как устроен мой отдых?</h3><p>Это повод посмотреть на свои привычки, без баллов и оценок.</p><fieldset><legend>1. Есть ли в твоём дне перерывы между делами?</legend><label class="option"><input required type="radio" name="r0" value="yes">Да</label><label class="option"><input required type="radio" name="r0" value="sometimes">Иногда</label><label class="option"><input required type="radio" name="r0" value="no">Пока нет</label></fieldset><fieldset><legend>2. Остаётся ли время для занятия, которое тебе нравится?</legend><label class="option"><input required type="radio" name="r1" value="yes">Да</label><label class="option"><input required type="radio" name="r1" value="sometimes">Иногда</label><label class="option"><input required type="radio" name="r1" value="no">Пока нет</label></fieldset><fieldset><legend>3. Получается ли выделять достаточно времени для сна?</legend><label class="option"><input required type="radio" name="r2" value="yes">Да</label><label class="option"><input required type="radio" name="r2" value="sometimes">Иногда</label><label class="option"><input required type="radio" name="r2" value="no">Пока нет</label></fieldset><fieldset><legend>4. Есть ли человек, которому можно рассказать о трудностях?</legend><label class="option"><input required type="radio" name="r3" value="yes">Да</label><label class="option"><input required type="radio" name="r3" value="sometimes">Иногда</label><label class="option"><input required type="radio" name="r3" value="no">Пока нет</label></fieldset><div class="actions"><button type="submit">Посмотреть идеи</button><button type="reset" class="secondary">Сбросить</button></div><div class="result" aria-live="polite"></div></form></div>
-<div class="two" style="margin-top:24px"><article class="panel"><h3>Пауза на две минуты</h3><p>Отложи задачу, посмотри вокруг, почувствуй опору под ногами. Если удобно, потянись или просто посиди спокойно.</p><div class="timer" id="clock" role="timer" aria-label="Оставшееся время">02:00</div><div class="actions"><button id="start" type="button">Начать паузу</button><button id="reset-timer" class="secondary" type="button">Сбросить</button></div><p id="timer-status" class="small" aria-live="polite">Можно остановиться в любой момент.</p></article><article class="panel"><h3>Мысли на бумаге</h3><p>Что меня беспокоит? Что я могу сделать сейчас? У кого могу попросить поддержку?</p><label for="thoughts">Мои мысли</label><textarea id="thoughts" maxlength="3000" placeholder="Можно начать с: «Сейчас я чувствую…»"></textarea><p id="chars" class="small" aria-live="polite">0 / 3000</p><button id="clear" type="button" class="secondary">Очистить запись</button><p class="small">Запись существует только в этой вкладке. Если хочешь сохранить её, скопируй в свои заметки.</p></article></div>
-<div class="panel" style="margin-top:24px"><h3>Мой маленький план</h3><p>Отметь только то, что подходит тебе сегодня.</p><label class="option"><input type="checkbox" class="plan">Выбрать одну посильную задачу</label><label class="option"><input type="checkbox" class="plan">Оставить время для отдыха</label><label class="option"><input type="checkbox" class="plan">Поговорить с человеком, которому доверяю</label><p id="plan-status" aria-live="polite">Выбрано действий: 0 из 3. Это не список обязательств.</p></div></section>
-<section id="resources"><span class="eyebrow">ЧИТАТЬ ДАЛЬШЕ</span><h2>Проверенные материалы</h2><div class="two"><article class="card"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#aebfd5"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ВОЗ · РУССКИЙ</span><h3>О стрессе простыми словами</h3><p>Ответы на вопросы о стрессе и повседневных способах заботы о себе.</p><a href="https://www.who.int/ru/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">Открыть материал ВОЗ ↗</a></div></article><article class="card"><svg viewBox="0 0 400 220" role="img" aria-label="Иллюстрация: спокойное место для отдыха"><rect width="400" height="220" rx="22" fill="#e6cf8e"/><circle cx="320" cy="53" r="27" fill="#fff5df"/><path d="M0 160 Q90 70 200 155 T400 125 V220 H0Z" fill="#ffffff" opacity=".32"/><path d="M0 195 Q120 120 230 190 T400 170 V220 H0Z" fill="#31594e" opacity=".24"/><rect x="65" y="148" width="122" height="13" rx="5" fill="#745c49"/><path d="M79 160V194 M173 160V194" stroke="#745c49" stroke-width="8"/><circle cx="235" cy="107" r="18" fill="#fff1dd"/><path d="M213 145 Q235 113 255 145 L263 175 H202Z" fill="#31594e"/><path d="M222 175L213 200 M246 175L256 200" stroke="#31594e" stroke-width="10" stroke-linecap="round"/><path d="M338 190V120 M338 155Q292 128 315 113Q342 107 338 155 M338 172Q380 132 375 119Q344 108 338 172" stroke="#31594e" fill="#31594e" stroke-width="4"/></svg><div class="card-body"><span class="eyebrow">ЮНИСЕФ · АНГЛИЙСКИЙ</span><h3>Благополучие и поддержка</h3><p>Подборка материалов об эмоциональном благополучии и поддержке детей и подростков.</p><a href="https://www.unicef.org/parenting/mental-health-and-well-being" target="_blank" rel="noopener noreferrer">Открыть подборку ЮНИСЕФ ↗</a></div></article></div><p class="small">Внешние ресурсы откроются в новой вкладке и потребуют интернет.</p></section>
-<section id="help"><span class="eyebrow">ОБРАТИТЬСЯ ЗА ПОДДЕРЖКОЙ</span><h2>Помощь — тоже следующий шаг</h2><div class="two"><div><p>Если трудности сохраняются или заметно мешают учёбе, сну, общению и повседневным делам, обратись к психологу или врачу. Не нужно ждать результата теста, чтобы попросить помощь.</p><p>Можно начать со школьного психолога, службы поддержки своего учебного заведения или врача в поликлинике.</p><a class="button secondary" href="#support-words">Как начать разговор ↓</a></div><div id="support-words" class="note"><strong>Можно сказать так:</strong><p>«Мне в последнее время непросто. Это мешает моим обычным делам. Я хочу поговорить и понять, какую поддержку могу получить».</p><p>Если есть непосредственная опасность для тебя или другого человека, обратись в местную экстренную службу и к человеку, который может быть рядом сейчас.</p></div></div><div class="faq"><h3>Частые вопросы</h3><details><summary>Тесты определяют моё психологическое состояние?</summary><p>Нет. Это авторские упражнения для размышления и выбора небольшого действия. Их результаты не являются диагнозом, оценкой риска или медицинским заключением.</p></details><details><summary>Нужно ли рассказывать о трудностях всем?</summary><p>Можно выбрать человека, с которым безопасно разговаривать, и рассказать столько, сколько тебе комфортно. Если нужна профессиональная помощь, можно начать с записи на консультацию.</p></details><details><summary>Кто видит мои ответы и заметки?</summary><p>Этот файл не отправляет их на сервер и не сохраняет между посещениями. После обновления страницы данные исчезают. Если устройство общее, очисти запись и закрой вкладку после использования.</p></details><details><summary>Как проект будет развиваться?</summary><p>Основа «Рядом» — доступная информация и простая навигация. В дальнейшем можно добавить новые темы и упражнения, сохранив отличие самопомощи от лечения.</p></details></div></section></main><footer><a href="#home">Рядом. ↑ Наверх</a><p>© 2026 · Учебный информационный проект для людей от 15 до 25 лет.</p><p>Материалы не заменяют профессиональную помощь. Иллюстрации встроены в файл и доступны без интернета.</p></footer><noscript><div class="note">Для поиска, тестов и таймера включи JavaScript в браузере. Материалы и раскрывающиеся карточки можно читать без него.</div></noscript>
-<script>
-const $=s=>document.querySelector(s);
-$('#search').addEventListener('input',e=>{const q=e.target.value.toLocaleLowerCase('ru').trim();let n=0;document.querySelectorAll('.topic').forEach(c=>{c.hidden=!c.textContent.toLocaleLowerCase('ru').includes(q);if(!c.hidden)n++});$('#count').textContent='Показано тем: '+n;$('#empty').hidden=n!==0;});
-function result(form,txt){form.querySelector('.result').textContent=txt;}
-$('#needs').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target),scores=[0,0,0];for(let i=0;i<3;i++)scores[Number(d.get('n'+i))]++;const advice=['План: запиши одну задачу и самый простой первый шаг. Например: открыть конспект и прочитать один абзац.','Пауза: попробуй отложить дела на пару минут. Ниже есть таймер; позже можно выделить время на полноценный отдых.','Поддержка: напиши человеку, которому доверяешь: «У тебя есть время меня выслушать?»'];let max=Math.max(...scores);let chosen=scores.map((s,i)=>s===max?advice[i]:null).filter(Boolean);result(e.target,(chosen.length>1?'Ответы указывают на несколько подходящих шагов. Выбери один. ':'По твоим ответам можно начать с такого действия: ')+chosen.join(' ')+' Это подсказка для выбора, а не оценка здоровья.');});
-$('#rest').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);const tips=['Выдели небольшой перерыв между двумя задачами.','Оставь немного времени для приятного занятия.','Подумай, как освободить время для сна и уменьшить вечернюю нагрузку.','Подумай, кому можно написать или где найти профессиональную поддержку.'];let chosen=tips.filter((_,i)=>d.get('r'+i)!=='yes');result(e.target,chosen.length?'Вот привычки, которым можно уделить внимание: '+chosen.join(' ')+' Выбери один посильный шаг на сегодня.':'В твоих ответах есть место для отдыха и поддержки. Подумай, какую из этих привычек тебе хочется сохранить. Ответы не позволяют оценить здоровье.');});
-for(const f of document.querySelectorAll('form')){f.addEventListener('reset',()=>result(f,''));f.addEventListener('change',()=>result(f,''));}
-let remaining=120,interval=null;function renderClock(){$('#clock').textContent=String(Math.floor(remaining/60)).padStart(2,'0')+':'+String(remaining%60).padStart(2,'0');}function stop(){clearInterval(interval);interval=null;}
-$('#start').addEventListener('click',()=>{if(interval){stop();$('#start').textContent='Продолжить';$('#timer-status').textContent='Пауза остановлена.';return;}if(!remaining)remaining=120;renderClock();const end=Date.now()+remaining*1000;$('#start').textContent='Остановить';$('#timer-status').textContent='Можно спокойно отвлечься от задачи.';interval=setInterval(()=>{remaining=Math.max(0,Math.ceil((end-Date.now())/1000));renderClock();if(!remaining){stop();$('#start').textContent='Ещё одна пауза';$('#timer-status').textContent='Две минуты прошли. Реши, готов ли ты вернуться к делам.';}},250);});
-$('#reset-timer').addEventListener('click',()=>{stop();remaining=120;renderClock();$('#start').textContent='Начать паузу';$('#timer-status').textContent='Можно остановиться в любой момент.';});
-$('#thoughts').addEventListener('input',()=>{$('#chars').textContent=$('#thoughts').value.length+' / 3000';});$('#clear').addEventListener('click',()=>{$('#thoughts').value='';$('#chars').textContent='0 / 3000';$('#thoughts').focus();});document.querySelectorAll('.plan').forEach(c=>c.addEventListener('change',()=>{$('#plan-status').textContent='Выбрано действий: '+document.querySelectorAll('.plan:checked').length+' из 3. Это не список обязательств.';}));
-</script></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Рядом — пространство поддержки: понятные материалы, небольшие упражнения, заметки и посильные шаги для заботы о себе.">
+    <meta name="theme-color" content="#31594e">
+    <title>
+      Рядом — можно начать с малого
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Перейти к содержанию
+    </a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Основная навигация">
+        <a class="logo" href="#home" aria-label="Рядом — главная">
+          рядом
+          <span>
+            ✳
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false">
+          Меню
+          <span aria-hidden="true">
+            ☰
+          </span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#problems">
+            Исследовать
+          </a>
+          <a href="#self-help">
+            Практики
+          </a>
+          <a href="#tests">
+            Мини-тесты
+          </a>
+          <a href="#about">
+            О проекте
+          </a>
+          <a class="nav-help" href="#help">
+            Найти поддержку ↗
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow">
+            <i class="dot">
+            </i>
+            МЕСТО, ГДЕ МОЖНО БЫТЬ СОБОЙ
+          </span>
+          <h1 id="hero-title">
+            Можно начать
+            <br>
+            с
+            <em>
+              малого.
+            </em>
+          </h1>
+          <p class="lead">
+            Не обязательно разбираться со всем сразу. Остановись на минуту, прислушайся к себе и выбери то, что поддержит тебя сегодня.
+          </p>
+          <div class="actions">
+            <a class="button" href="#check-in">
+              Как я сейчас?
+              <span>
+                ↗
+              </span>
+            </a>
+            <a class="button ghost" href="#problems">
+              Исследовать темы
+            </a>
+          </div>
+          <p class="hero-caption">
+            Без оценок. В своём темпе. С вниманием к себе.
+          </p>
+        </div>
+        <figure class="hero-art">
+          <img src="images/home.svg" alt="Уютная комната: человек читает в кресле у окна, рядом чашка и растение" width="720" height="560" fetchpriority="high">
+          <figcaption>
+            <span class="tiny-flower" aria-hidden="true">
+              ✳
+            </span>
+            Сегодня можно не успеть всё.
+          </figcaption>
+        </figure>
+      </section>
+      <section class="check-in wrap" id="check-in" aria-labelledby="check-title">
+        <div>
+          <span class="eyebrow">
+            НЕБОЛЬШАЯ ОСТАНОВКА
+          </span>
+          <h2 id="check-title">
+            Как ты сейчас?
+          </h2>
+          <p>
+            Выбери близкое ощущение — появится идея, с чего начать.
+          </p>
+        </div>
+        <div class="mood-area">
+          <div class="moods" role="group" aria-label="Моё состояние">
+            <button type="button" data-mood="tired" aria-pressed="false">
+              <span aria-hidden="true">
+                ☾
+              </span>
+              Усталость
+            </button>
+            <button type="button" data-mood="anxious" aria-pressed="false">
+              <span aria-hidden="true">
+                ≈
+              </span>
+              Беспокойство
+            </button>
+            <button type="button" data-mood="lonely" aria-pressed="false">
+              <span aria-hidden="true">
+                ♡
+              </span>
+              Одиночество
+            </button>
+            <button type="button" data-mood="okay" aria-pressed="false">
+              <span aria-hidden="true">
+                ☀
+              </span>
+              Всё спокойно
+            </button>
+          </div>
+          <div id="mood-result" class="mood-result" aria-live="polite">
+            Здесь нет правильного ответа. Можно просто выбрать тему ниже.
+          </div>
+        </div>
+      </section>
+      <section class="section wrap" id="problems" aria-labelledby="topics-title">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">
+              01 / ИССЛЕДОВАТЬ СЕБЯ
+            </span>
+            <h2 id="topics-title">
+              Что тебе сейчас близко?
+            </h2>
+          </div>
+          <p>
+            Небольшие материалы о знакомых переживаниях. Читай то, что откликается, и пробуй посильные шаги.
+          </p>
+        </div>
+        <div class="topic-toolbar">
+          <div class="filters" role="group" aria-label="Фильтр тем">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">
+              Все темы
+            </button>
+            <button class="chip" type="button" data-filter="study" aria-pressed="false">
+              Учёба и дела
+            </button>
+            <button class="chip" type="button" data-filter="feelings" aria-pressed="false">
+              Чувства и общение
+            </button>
+            <button class="chip" type="button" data-filter="rest" aria-pressed="false">
+              Отдых
+            </button>
+            <button class="chip" type="button" data-filter="saved" aria-pressed="false">
+              ♡ Избранное
+              <span id="saved-count">
+                0
+              </span>
+            </button>
+          </div>
+          <div class="search-field">
+            <label class="sr-only" for="search">
+              Поиск по темам
+            </label>
+            <input id="search" type="search" placeholder="Найти тему…" maxlength="100">
+          </div>
+        </div>
+        <p class="small" id="topic-count" aria-live="polite">
+          Показано тем: 6
+        </p>
+        <div class="topic-grid">
+          <article class="topic card" id="stress" data-category="study">
+            <div class="topic-picture">
+              <img src="images/study.svg" alt="Учебный стол с ноутбуком, книгами и лампой" width="720" height="460" loading="lazy">
+              <button class="save-topic" type="button" data-save="stress" aria-pressed="false" aria-label="Добавить в избранное: Когда всё навалилось">
+                ♡
+              </button>
+            </div>
+            <div class="card-body">
+              <span class="eyebrow">
+                Учёба и дела
+              </span>
+              <h3>
+                Когда всё навалилось
+              </h3>
+              <p>
+                Дедлайны, контрольные, сообщения и ожидания. Как выбрать отправную точку, когда задач слишком много?
+              </p>
+              <details>
+                <summary>
+                  Разобраться подробнее
+                  <span aria-hidden="true">
+                    ＋
+                  </span>
+                </summary>
+                <div class="article-content">
+                  <p>
+                    Когда дел много, бывает трудно решить, за что взяться. Можно снова и снова просматривать список, отвлекаться и сердиться на себя. В такой момент полезно сначала увидеть объём нагрузки, а уже потом составлять план.
+                  </p>
+                  <p>
+                    Раздели лист на три части: «сегодня», «может подождать», «нужна помощь». Для одного дела из первой части опиши действие, которое можно выполнить за несколько минут. Не «подготовиться к экзамену», а «открыть список вопросов и отметить знакомые».
+                  </p>
+                  <aside class="callout">
+                    <strong>
+                      Один шаг сейчас
+                    </strong>
+                    <p>
+                      Выбери одну задачу и убери из неё всё, что не нужно для первого шага.
+                    </p>
+                  </aside>
+                  <a class="text-link" href="#plan">
+                    Составить маленький план →
+                  </a>
+                  <p class="source">
+                    <a href="https://www.who.int/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">
+                      ВОЗ: вопросы и ответы о стрессе (англ.) ↗
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="topic card" id="anxiety" data-category="feelings">
+            <div class="topic-picture">
+              <img src="images/anxiety.svg" alt="Человек и спутанная линия, переходящая в свободную нить" width="720" height="460" loading="lazy">
+              <button class="save-topic" type="button" data-save="anxiety" aria-pressed="false" aria-label="Добавить в избранное: Если мысли не отпускают">
+                ♡
+              </button>
+            </div>
+            <div class="card-body">
+              <span class="eyebrow">
+                Мысли и чувства
+              </span>
+              <h3>
+                Если мысли не отпускают
+              </h3>
+              <p>
+                «А вдруг не получится?» Иногда мысли о будущем занимают всё внимание. Попробуем вернуться к тому, что есть сейчас.
+              </p>
+              <details>
+                <summary>
+                  Разобраться подробнее
+                  <span aria-hidden="true">
+                    ＋
+                  </span>
+                </summary>
+                <div class="article-content">
+                  <p>
+                    Одна тревожная мысль может потянуть за собой целую цепочку предположений. Предположение при этом ещё не становится фактом. Попробуй записать отдельно: что произошло, что ты об этом думаешь и что тебе пока неизвестно.
+                  </p>
+                  <p>
+                    Не обязательно спорить с каждой мыслью или заставлять себя немедленно успокоиться. Можно на короткое время переключить внимание на комнату, звуки и опору под ногами. Если упражнение неприятно, его можно закончить.
+                  </p>
+                  <aside class="callout">
+                    <strong>
+                      Один шаг сейчас
+                    </strong>
+                    <p>
+                      Назови один факт о происходящем и одно действие, которое сейчас зависит от тебя.
+                    </p>
+                  </aside>
+                  <a class="text-link" href="#self-help">
+                    Открыть упражнения →
+                  </a>
+                  <p class="source">
+                    <a href="https://www.who.int/publications/i/item/9789240003927" target="_blank" rel="noopener noreferrer">
+                      ВОЗ: руководство по преодолению стресса ↗
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="topic card" id="burnout" data-category="rest">
+            <div class="topic-picture">
+              <img src="images/rest.svg" alt="Человек отдыхает на диване рядом с растением" width="720" height="460" loading="lazy">
+              <button class="save-topic" type="button" data-save="burnout" aria-pressed="false" aria-label="Добавить в избранное: Когда сил почти не осталось">
+                ♡
+              </button>
+            </div>
+            <div class="card-body">
+              <span class="eyebrow">
+                Отдых и ресурс
+              </span>
+              <h3>
+                Когда сил почти не осталось
+              </h3>
+              <p>
+                Даже приятные дела могут утомлять. Отдых не нужно заслуживать завершённым списком задач.
+              </p>
+              <details>
+                <summary>
+                  Разобраться подробнее
+                  <span aria-hidden="true">
+                    ＋
+                  </span>
+                </summary>
+                <div class="article-content">
+                  <p>
+                    Сначала спроси себя, что именно было тяжёлым: долгое сосредоточение, шум, общение, физическая нагрузка или нехватка времени на себя. От этого зависит, какой перерыв кажется подходящим именно тебе.
+                  </p>
+                  <p>
+                    Можно отложить необязательное, сменить занятие или попросить пересмотреть нагрузку. Короткая пауза не заменяет полноценного отдыха. Если усталость сохраняется, заметно мешает обычной жизни или сопровождается другими беспокоящими изменениями, обсуди это с врачом.
+                  </p>
+                  <aside class="callout">
+                    <strong>
+                      Один шаг сейчас
+                    </strong>
+                    <p>
+                      Выбери одно необязательное дело, которое сегодня можно перенести.
+                    </p>
+                  </aside>
+                  <a class="text-link" href="#tests">
+                    Подумать о своём отдыхе →
+                  </a>
+                  <p class="source">
+                    <a href="https://www.who.int/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">
+                      ВОЗ: вопросы и ответы о стрессе (англ.) ↗
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="topic card" id="communication" data-category="feelings">
+            <div class="topic-picture">
+              <img src="images/connection.svg" alt="Два человека разговаривают на скамейке в парке" width="720" height="460" loading="lazy">
+              <button class="save-topic" type="button" data-save="communication" aria-pressed="false" aria-label="Добавить в избранное: Хочется, чтобы тебя услышали">
+                ♡
+              </button>
+            </div>
+            <div class="card-body">
+              <span class="eyebrow">
+                Общение
+              </span>
+              <h3>
+                Хочется, чтобы тебя услышали
+              </h3>
+              <p>
+                Одиночество бывает и среди людей. Начать разговор можно с одной простой фразы, без длинных объяснений.
+              </p>
+              <details>
+                <summary>
+                  Разобраться подробнее
+                  <span aria-hidden="true">
+                    ＋
+                  </span>
+                </summary>
+                <div class="article-content">
+                  <p>
+                    Не всегда понятно, кому написать и как объяснить своё состояние. Подумай о человеке, рядом с которым тебе обычно безопасно: друге, родственнике, преподавателе или психологе. Можно заранее спросить, удобно ли ему поговорить.
+                  </p>
+                  <p>
+                    Скажи, какая поддержка нужна: выслушать без советов, побыть рядом, помочь с конкретным делом. Если человек сейчас не может ответить, это не говорит о твоей ценности. Можно обратиться к другому человеку или договориться о времени.
+                  </p>
+                  <aside class="callout">
+                    <strong>
+                      Один шаг сейчас
+                    </strong>
+                    <p>
+                      Попробуй: «Мне сейчас непросто. У тебя есть время немного меня выслушать?»
+                    </p>
+                  </aside>
+                  <a class="text-link" href="#help">
+                    Подготовиться к разговору →
+                  </a>
+                  <p class="source">
+                    <a href="https://www.unicef.org/parenting/mental-health-and-well-being" target="_blank" rel="noopener noreferrer">
+                      ЮНИСЕФ: эмоциональное благополучие (англ.) ↗
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="topic card" id="motivation" data-category="study">
+            <div class="topic-picture">
+              <img src="images/steps.svg" alt="Человек поднимается по ступеням к небольшому флажку" width="720" height="460" loading="lazy">
+              <button class="save-topic" type="button" data-save="motivation" aria-pressed="false" aria-label="Добавить в избранное: Начать, даже без вдохновения">
+                ♡
+              </button>
+            </div>
+            <div class="card-body">
+              <span class="eyebrow">
+                Маленькие шаги
+              </span>
+              <h3>
+                Начать, даже без вдохновения
+              </h3>
+              <p>
+                Большую задачу трудно удержать в голове. Давай превратим её в несколько понятных действий.
+              </p>
+              <details>
+                <summary>
+                  Разобраться подробнее
+                  <span aria-hidden="true">
+                    ＋
+                  </span>
+                </summary>
+                <div class="article-content">
+                  <p>
+                    «Сделать весь проект» звучит тяжело. «Создать файл и написать заголовок» — уже конкретнее. Маленький шаг не гарантирует, что дальше всё пойдёт легко, но помогает понять, где именно возникает затруднение.
+                  </p>
+                  <p>
+                    Если не получается начать, проверь, понятна ли задача и есть ли нужные материалы. Возможно, сначала стоит задать вопрос преподавателю, попросить пример или сделать перерыв. План можно менять: это инструмент, а не обещание любой ценой.
+                  </p>
+                  <aside class="callout">
+                    <strong>
+                      Один шаг сейчас
+                    </strong>
+                    <p>
+                      Запиши действие с глагола: открыть, спросить, прочитать, выбрать или набросать.
+                    </p>
+                  </aside>
+                  <a class="text-link" href="#plan">
+                    Записать первый шаг →
+                  </a>
+                  <p class="source">
+                    <a href="https://www.who.int/publications/i/item/9789240003927" target="_blank" rel="noopener noreferrer">
+                      ВОЗ: руководство по преодолению стресса ↗
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+          <article class="topic card" id="balance" data-category="rest">
+            <div class="topic-picture">
+              <img src="images/sleep.svg" alt="Кровать, ночник и луна за арочным окном" width="720" height="460" loading="lazy">
+              <button class="save-topic" type="button" data-save="balance" aria-pressed="false" aria-label="Добавить в избранное: Мягко закончить день">
+                ♡
+              </button>
+            </div>
+            <div class="card-body">
+              <span class="eyebrow">
+                Вечер и сон
+              </span>
+              <h3>
+                Мягко закончить день
+              </h3>
+              <p>
+                Вечер не обязан становиться второй рабочей сменой. Можно оставить незаконченные дела на завтра.
+              </p>
+              <details>
+                <summary>
+                  Разобраться подробнее
+                  <span aria-hidden="true">
+                    ＋
+                  </span>
+                </summary>
+                <div class="article-content">
+                  <p>
+                    Иногда трудно отложить телефон или перестать обдумывать завтрашние дела. Попробуй заранее записать одну задачу на утро, чтобы не удерживать весь список в голове. Подумай, что делает твой вечер спокойнее: тишина, чтение или короткий разговор.
+                  </p>
+                  <p>
+                    Выбери посильное изменение в привычном распорядке. Регулярное время отхода ко сну и подъёма, спокойная обстановка и уменьшение использования экранов перед сном могут поддерживать отдых. Если проблемы со сном продолжаются и мешают днём, обсуди их со специалистом.
+                  </p>
+                  <aside class="callout">
+                    <strong>
+                      Один шаг сейчас
+                    </strong>
+                    <p>
+                      Запиши то, к чему вернёшься завтра, и выбери одно спокойное занятие на вечер.
+                    </p>
+                  </aside>
+                  <a class="text-link" href="#journal">
+                    Оставить мысли в заметке →
+                  </a>
+                  <p class="source">
+                    <a href="https://www.who.int/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">
+                      ВОЗ: вопросы и ответы о стрессе (англ.) ↗
+                    </a>
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+        <div id="empty-topics" class="empty-state" hidden>
+          <h3>
+            Пока ничего не нашлось
+          </h3>
+          <p>
+            Попробуй другое слово или добавь тему в избранное кнопкой ♡.
+          </p>
+          <button class="button ghost" id="reset-search" type="button">
+            Показать все темы
+          </button>
+        </div>
+        <p class="small">
+          Избранное хранится только до закрытия или обновления этой страницы.
+        </p>
+      </section>
+      <section class="quote-band">
+        <div class="wrap">
+          <span aria-hidden="true">
+            ✳
+          </span>
+          <p>
+            Тебе не нужно быть продуктивным
+            <br>
+            каждую минуту, чтобы быть
+            <em>
+              достаточным.
+            </em>
+          </p>
+          <span class="small">
+            НАПОМИНАНИЕ НА СЕГОДНЯ
+          </span>
+        </div>
+      </section>
+      <section class="section wrap" id="self-help" aria-labelledby="practice-title">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">
+              02 / ОТ МЫСЛЕЙ К ДЕЙСТВИЮ
+            </span>
+            <h2 id="practice-title">
+              Несколько минут для себя
+            </h2>
+          </div>
+          <p>
+            Выбирай упражнение, а не обязанность. Любую практику можно остановить или пропустить.
+          </p>
+        </div>
+        <div class="practice-layout">
+          <div class="practice-menu" role="group" aria-label="Выбор упражнения">
+            <button type="button" data-practice="ground" aria-pressed="true">
+              <span class="practice-number">
+                01
+              </span>
+              <span>
+                <strong>
+                  Вернуться в настоящий момент
+                </strong>
+                <small>
+                  Пять спокойных шагов · без таймера
+                </small>
+              </span>
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+            <button type="button" data-practice="pause" aria-pressed="false">
+              <span class="practice-number">
+                02
+              </span>
+              <span>
+                <strong>
+                  Разрешить себе паузу
+                </strong>
+                <small>
+                  От одной до пяти минут
+                </small>
+              </span>
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+            <button type="button" data-practice="write" aria-pressed="false">
+              <span class="practice-number">
+                03
+              </span>
+              <span>
+                <strong>
+                  Разложить мысли по полочкам
+                </strong>
+                <small>
+                  Свободная заметка · в своём темпе
+                </small>
+              </span>
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </button>
+            <aside class="callout">
+              <strong>
+                Самопомощь — не самолечение.
+              </strong>
+              <p>
+                Здесь нет диагнозов и обещаний быстрого результата. Это небольшие способы уделить себе внимание.
+              </p>
+            </aside>
+          </div>
+          <div class="practice-panel" id="practice-ground">
+            <div class="ground-art" aria-hidden="true">
+              <div class="orbit orbit-one">
+              </div>
+              <div class="orbit orbit-two">
+              </div>
+              <span class="ground-symbol">
+                ✳
+              </span>
+            </div>
+            <div class="step-dots" aria-hidden="true">
+              <i class="active">
+              </i>
+              <i>
+              </i>
+              <i>
+              </i>
+              <i>
+              </i>
+              <i>
+              </i>
+            </div>
+            <p class="eyebrow" id="ground-counter">
+              ШАГ 1 ИЗ 5
+            </p>
+            <h3 id="ground-title" tabindex="-1">
+              Почувствуй опору
+            </h3>
+            <p id="ground-text">
+              Устройся так, как удобно. Заметь, как стопы касаются пола или тело опирается на стул. Глаза можно оставить открытыми.
+            </p>
+            <div class="actions center">
+              <button type="button" class="button ghost" id="ground-back" disabled>
+                Назад
+              </button>
+              <button type="button" class="button" id="ground-next">
+                Следующий шаг →
+              </button>
+            </div>
+            <p class="small">
+              Можно ничего не записывать. Замечай только то, что комфортно.
+            </p>
+          </div>
+          <div class="practice-panel" id="practice-pause" hidden>
+            <span class="eyebrow">
+              ПРОСТО ПОБУДЬ ЗДЕСЬ
+            </span>
+            <h3>
+              Дела могут немного подождать
+            </h3>
+            <p>
+              Посмотри в окно, потянись или просто посиди. Дыши привычным для себя образом — подстраиваться под таймер не нужно.
+            </p>
+            <div class="timer-face">
+              <span id="clock" role="timer" aria-label="Осталось времени">
+                02:00
+              </span>
+            </div>
+            <div class="duration-options" role="group" aria-label="Продолжительность паузы">
+              <button class="chip" type="button" data-duration="60" aria-pressed="false">
+                1 минута
+              </button>
+              <button class="chip" type="button" data-duration="120" aria-pressed="true">
+                2 минуты
+              </button>
+              <button class="chip" type="button" data-duration="300" aria-pressed="false">
+                5 минут
+              </button>
+            </div>
+            <div class="actions center">
+              <button class="button" type="button" id="timer-toggle">
+                Начать паузу
+              </button>
+              <button class="button ghost" type="button" id="timer-reset">
+                Сбросить
+              </button>
+            </div>
+            <p class="small" id="timer-status" aria-live="polite">
+              Таймер завершится без звука.
+            </p>
+          </div>
+          <div class="practice-panel journal-panel" id="practice-write" hidden>
+            <img class="journal-illustration" src="images/journal.svg" alt="Открытый блокнот с карандашом и маленьким сердцем" width="720" height="460" loading="lazy">
+            <span class="eyebrow">
+              ЗАМЕТКА ДЛЯ СЕБЯ
+            </span>
+            <h3 id="journal">
+              Не держать всё в голове
+            </h3>
+            <label for="thoughts">
+              Что произошло? Что я чувствую? Что мне сейчас нужно?
+            </label>
+            <textarea id="thoughts" rows="6" maxlength="5000" placeholder="Можно начать с фразы «Сейчас я замечаю…»"></textarea>
+            <div class="note-meta">
+              <span id="chars" class="small">
+                0 / 5000
+              </span>
+              <button class="text-button" type="button" id="new-prompt">
+                Другая подсказка ↻
+              </button>
+            </div>
+            <p id="writing-prompt" class="writing-prompt">
+              Если бы друг оказался в похожей ситуации, что бы я ему сказал?
+            </p>
+            <div class="actions">
+              <button class="button" type="button" id="download-note">
+                Скачать заметку
+              </button>
+              <button class="button ghost" type="button" id="clear-note">
+                Очистить
+              </button>
+            </div>
+            <p class="small" id="note-status" aria-live="polite">
+              Заметка не отправляется на сервер и исчезнет при обновлении страницы. Скачай её, если хочешь сохранить.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="tests-section" id="tests">
+        <div class="wrap section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">
+                03 / ЗАДАТЬ СЕБЕ ВОПРОСЫ
+              </span>
+              <h2>
+                Небольшая сверка с собой
+              </h2>
+            </div>
+            <p>
+              Два мини-теста для саморефлексии. Без диагноза, баллов здоровья и сравнения с другими.
+            </p>
+          </div>
+          <div class="two-columns">
+            <form class="quiz card" id="needs">
+              <span class="pill">
+                3 вопроса · около минуты
+              </span>
+              <h3>
+                Что мне сейчас нужнее?
+              </h3>
+              <p>
+                Выбери наиболее близкие ответы. В конце появятся варианты следующего шага.
+              </p>
+              <fieldset>
+                <legend>
+                  1. Что сейчас кажется самым трудным?
+                </legend>
+                <label>
+                  <input type="radio" name="n0" value="plan" required>
+                  Понять, с чего начать
+                </label>
+                <label>
+                  <input type="radio" name="n0" value="rest">
+                  Найти силы на дела
+                </label>
+                <label>
+                  <input type="radio" name="n0" value="talk">
+                  Оставаться с переживаниями одному
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  2. Чего хочется в ближайшее время?
+                </legend>
+                <label>
+                  <input type="radio" name="n1" value="rest" required>
+                  Тишины и перерыва
+                </label>
+                <label>
+                  <input type="radio" name="n1" value="talk">
+                  Разговора с понимающим человеком
+                </label>
+                <label>
+                  <input type="radio" name="n1" value="plan">
+                  Понятного первого действия
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  3. Какой вариант сейчас посилен?
+                </legend>
+                <label>
+                  <input type="radio" name="n2" value="talk" required>
+                  Написать короткое сообщение
+                </label>
+                <label>
+                  <input type="radio" name="n2" value="plan">
+                  Записать одну задачу
+                </label>
+                <label>
+                  <input type="radio" name="n2" value="rest">
+                  Ненадолго отложить дела
+                </label>
+              </fieldset>
+              <div class="actions">
+                <button class="button" type="submit">
+                  Посмотреть подсказку →
+                </button>
+                <button class="text-button" type="reset">
+                  Заново
+                </button>
+              </div>
+              <div class="quiz-result" aria-live="polite" tabindex="-1" hidden>
+              </div>
+            </form>
+            <form class="quiz card" id="rest">
+              <span class="pill peach">
+                4 вопроса · около минуты
+              </span>
+              <h3>
+                Есть ли место для отдыха?
+              </h3>
+              <p>
+                Вспомни последние несколько дней. Это повод заметить свои привычки, а не оценить их.
+              </p>
+              <fieldset>
+                <legend>
+                  1. Были ли у меня перерывы между делами?
+                </legend>
+                <div class="inline-options">
+                  <label>
+                    <input type="radio" name="r0" value="yes" required>
+                    Да
+                  </label>
+                  <label>
+                    <input type="radio" name="r0" value="sometimes">
+                    Не всегда
+                  </label>
+                  <label>
+                    <input type="radio" name="r0" value="no">
+                    Нет
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  2. Находилось ли время на приятное занятие?
+                </legend>
+                <div class="inline-options">
+                  <label>
+                    <input type="radio" name="r1" value="yes" required>
+                    Да
+                  </label>
+                  <label>
+                    <input type="radio" name="r1" value="sometimes">
+                    Не всегда
+                  </label>
+                  <label>
+                    <input type="radio" name="r1" value="no">
+                    Нет
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  3. Была ли возможность выделить достаточно времени на сон?
+                </legend>
+                <div class="inline-options">
+                  <label>
+                    <input type="radio" name="r2" value="yes" required>
+                    Да
+                  </label>
+                  <label>
+                    <input type="radio" name="r2" value="sometimes">
+                    Не всегда
+                  </label>
+                  <label>
+                    <input type="radio" name="r2" value="no">
+                    Нет
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  4. Есть ли человек, к которому я могу обратиться?
+                </legend>
+                <div class="inline-options">
+                  <label>
+                    <input type="radio" name="r3" value="yes" required>
+                    Да
+                  </label>
+                  <label>
+                    <input type="radio" name="r3" value="sometimes">
+                    Не всегда
+                  </label>
+                  <label>
+                    <input type="radio" name="r3" value="no">
+                    Нет
+                  </label>
+                </div>
+              </fieldset>
+              <div class="actions">
+                <button class="button" type="submit">
+                  Получить идеи →
+                </button>
+                <button class="text-button" type="reset">
+                  Заново
+                </button>
+              </div>
+              <div class="quiz-result" aria-live="polite" tabindex="-1" hidden>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section wrap" id="plan">
+        <div class="plan-layout">
+          <div>
+            <span class="eyebrow">
+              04 / ПОСИЛЬНЫЙ ПЛАН
+            </span>
+            <h2>
+              Сегодня достаточно
+              <br>
+              одного шага.
+            </h2>
+            <p>
+              Собери небольшой список из того, что подходит тебе. Можно добавить своё действие, отметить выполненное или удалить ненужное.
+            </p>
+            <img src="images/steps.svg" alt="Небольшие ступени к достижимой цели" class="plan-image" width="720" height="460" loading="lazy">
+          </div>
+          <div class="plan-card card">
+            <h3>
+              Мой план на сегодня
+            </h3>
+            <p class="small">
+              Список хранится до обновления страницы. Его можно скачать.
+            </p>
+            <div class="suggestions" role="group" aria-label="Идеи действий">
+              <button class="chip" type="button" data-add="Сделать перерыв">
+                ＋ Перерыв
+              </button>
+              <button class="chip" type="button" data-add="Написать близкому человеку">
+                ＋ Разговор
+              </button>
+              <button class="chip" type="button" data-add="Немного пройтись, если есть возможность">
+                ＋ Прогулка
+              </button>
+            </div>
+            <form id="plan-form">
+              <label for="plan-input">
+                Мой маленький шаг
+              </label>
+              <div class="input-row">
+                <input id="plan-input" maxlength="120" required placeholder="Например, открыть конспект">
+                <button class="button" type="submit" aria-label="Добавить действие">
+                  ＋
+                </button>
+              </div>
+            </form>
+            <ul id="plan-list" class="plan-list">
+            </ul>
+            <p id="plan-empty">
+              Пока здесь свободное место для твоих идей.
+            </p>
+            <progress id="plan-progress" max="1" value="0" aria-label="Выполненные действия">
+            </progress>
+            <p class="small" id="plan-status" aria-live="polite">
+              Выбери одно посильное действие.
+            </p>
+            <button class="button ghost" type="button" id="download-plan">
+              Скачать план
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="support-section" id="help">
+        <div class="wrap section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">
+                05 / ТЫ МОЖЕШЬ ОБРАТИТЬСЯ
+              </span>
+              <h2>
+                Поддержка бывает разной
+              </h2>
+            </div>
+            <p>
+              Не нужно ждать, пока станет совсем тяжело. Можно начать с разговора с человеком, которому доверяешь.
+            </p>
+          </div>
+          <div class="support-grid">
+            <div class="card">
+              <span class="support-icon" aria-hidden="true">
+                ↗
+              </span>
+              <h3>
+                Близкий человек
+              </h3>
+              <p>
+                Друг, родственник или взрослый, рядом с которым безопасно. Скажи, что тебе нужно: выслушать, побыть рядом или помочь с делом.
+              </p>
+              <button class="text-button" type="button" id="message-template">
+                Подготовить сообщение →
+              </button>
+            </div>
+            <div class="card">
+              <span class="support-icon" aria-hidden="true">
+                ♡
+              </span>
+              <h3>
+                Психолог
+              </h3>
+              <p>
+                Можно обратиться к психологу школы, университета или другой службы. Перед разговором спроси о формате встречи и правилах конфиденциальности.
+              </p>
+              <a class="text-link" href="#first-meeting">
+                Как подготовиться →
+              </a>
+            </div>
+            <div class="card">
+              <span class="support-icon" aria-hidden="true">
+                ＋
+              </span>
+              <h3>
+                Врач
+              </h3>
+              <p>
+                Если трудности сохраняются, усиливаются или мешают сну, учёбе и обычным делам, обсуди их с медицинским специалистом. Самостоятельно подбирать лечение не нужно.
+              </p>
+              <a class="text-link" href="https://www.who.int/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">
+                Материал ВОЗ ↗
+              </a>
+            </div>
+          </div>
+          <div class="message-box card" id="message-box" hidden>
+            <h3>
+              Можно написать так
+            </h3>
+            <label for="support-message">
+              Измени текст так, чтобы он звучал по-твоему
+            </label>
+            <textarea id="support-message" rows="3">Привет. Мне сейчас непросто, и мне хотелось бы поговорить. У тебя будет немного времени меня выслушать? Сейчас мне важнее поддержка, чем советы.</textarea>
+            <button class="button" type="button" id="copy-message">
+              Скопировать текст
+            </button>
+            <p class="small" id="copy-status" aria-live="polite">
+              Сайт не отправляет сообщения. Ты сам выбираешь, кому и когда написать.
+            </p>
+          </div>
+          <aside class="urgent-note">
+            <strong>
+              Если прямо сейчас есть угроза жизни или безопасности
+            </strong>
+            <p>
+              Обратись в местную экстренную службу или ближайшее отделение неотложной помощи. По возможности попроси человека, которому доверяешь, побыть рядом. Упражнения на сайте не предназначены для экстренных ситуаций.
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section class="section wrap" id="resources">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">
+              ЧИТАТЬ ДАЛЬШЕ
+            </span>
+            <h2>
+              Материалы, к которым можно вернуться
+            </h2>
+          </div>
+          <p>
+            Понятные отправные точки от международных организаций. Внешние страницы открываются в новой вкладке.
+          </p>
+        </div>
+        <div class="resource-grid">
+          <a class="resource-card" href="https://www.who.int/publications/i/item/9789240003927" target="_blank" rel="noopener noreferrer">
+            <span class="eyebrow">
+              ВОЗ · РУКОВОДСТВО
+            </span>
+            <h3>
+              Важные навыки в периоды стресса
+            </h3>
+            <p>
+              Иллюстрированное руководство и аудиоупражнения. На странице можно выбрать русский язык.
+            </p>
+            <span class="text-link">
+              Открыть материал ↗
+            </span>
+          </a>
+          <a class="resource-card" href="https://www.who.int/news-room/questions-and-answers/item/stress" target="_blank" rel="noopener noreferrer">
+            <span class="eyebrow">
+              ВОЗ · ВОПРОСЫ И ОТВЕТЫ
+            </span>
+            <h3>
+              Что такое стресс
+            </h3>
+            <p>
+              О повседневном напряжении, привычках и обращении за поддержкой. Материал на английском языке.
+            </p>
+            <span class="text-link">
+              Читать дальше ↗
+            </span>
+          </a>
+          <a class="resource-card" href="https://www.unicef.org/parenting/mental-health-and-well-being" target="_blank" rel="noopener noreferrer">
+            <span class="eyebrow">
+              ЮНИСЕФ · ДЛЯ СЕМЬИ
+            </span>
+            <h3>
+              Эмоциональное благополучие
+            </h3>
+            <p>
+              Материалы для родителей о поддержке детей и подростков. Страница на английском языке.
+            </p>
+            <span class="text-link">
+              Посмотреть подборку ↗
+            </span>
+          </a>
+        </div>
+      </section>
+      <section class="section wrap about-section" id="about">
+        <div>
+          <span class="eyebrow">
+            О ПРОЕКТЕ
+          </span>
+          <h2>
+            Не идеальный день.
+            <br>
+            Чуть больше заботы.
+          </h2>
+          <p>
+            «Рядом» — учебный информационный проект для школьников, студентов и всех, кому хочется лучше понимать свои переживания. Здесь можно почитать, сделать паузу и подобрать небольшой следующий шаг.
+          </p>
+          <p>
+            Тексты и мини-тесты не определяют наличие расстройства. Упражнения на сайте — авторские подсказки для саморефлексии; они не являются диагностическими методиками или заменой профессиональной помощи.
+          </p>
+          <p class="small">
+            Фотографий реальных людей здесь нет: все сюжетные иллюстрации созданы для проекта.
+          </p>
+        </div>
+        <div class="faq">
+          <h3>
+            Вопросы, которые могут возникнуть
+          </h3>
+          <details>
+            <summary>
+              Нужно проходить всё по порядку?
+            </summary>
+            <p>
+              Нет. Можно открыть только одну тему или упражнение. Здесь нет обязательного маршрута, ежедневной серии и штрафов за пропущенные дни.
+            </p>
+          </details>
+          <details id="first-meeting">
+            <summary>
+              Что сказать на первой встрече с психологом?
+            </summary>
+            <p>
+              Расскажи своими словами, что беспокоит, как давно это происходит и чему мешает. Можно заранее записать вопросы. Ты можешь уточнить образование специалиста, стоимость, формат и правила конфиденциальности.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Кто видит мои записи и ответы?
+            </summary>
+            <p>
+              У сайта нет формы отправки данных на сервер. Заметки, ответы и план находятся в памяти открытой страницы и сбрасываются при её обновлении. Скачанные файлы остаются на твоём устройстве; на общем компьютере их могут увидеть другие пользователи.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Если практика не подошла?
+            </summary>
+            <p>
+              Её можно остановить. Людям подходят разные способы поддержки, а иногда вместо упражнения нужен отдых, разговор или помощь специалиста. Неподходящая практика не означает, что ты сделал что-то неправильно.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-main">
+        <a class="logo" href="#home">
+          рядом
+          <span>
+            ✳
+          </span>
+        </a>
+        <p>
+          Маленькие шаги. Больше внимания к себе.
+        </p>
+        <a href="#home">
+          Вернуться наверх ↑
+        </a>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>
+          Учебный проект · 2026
+        </span>
+        <span>
+          Информация и самопомощь · не медицинская услуга
+        </span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" hidden>
+    </div>
+    <noscript>
+      <div class="noscript-note">
+        JavaScript отключён. Статьи, ссылки и раскрывающиеся вопросы доступны; для упражнений и тестов включи JavaScript.
+      </div>
+    </noscript>
+  </body>
+</html>
