@@ -44,6 +44,7 @@
           <a href="#about">
             О проекте
           </a>
+          <a href="#feedback">Обратная связь</a>
           <a class="nav-help" href="#help">
             Найти поддержку ↗
           </a>
@@ -1107,6 +1108,23 @@
           </a>
         </div>
       </section>
+      <section class="section wrap feedback-section" id="feedback" aria-labelledby="feedback-title">
+        <div class="section-heading">
+          <div><span class="eyebrow">ВАШЕ МНЕНИЕ</span><h2 id="feedback-title">Помоги сделать «Рядом» лучше</h2></div>
+          <p>Нашёл ошибку, придумал полезную тему или хочешь оценить удобство? Напиши короткий отзыв. Личные истории и сведения о здоровье указывать не нужно.</p>
+        </div>
+        <div class="feedback-layout">
+          <form class="card feedback-form" id="feedback-form">
+            <div class="feedback-field"><label for="feedback-kind">Тема обращения</label><select id="feedback-kind" required><option value="">Выбери вариант</option><option value="Предложение">Предложить улучшение</option><option value="Ошибка">Сообщить об ошибке</option><option value="Новая тема">Предложить тему</option><option value="Отзыв">Оставить отзыв</option></select></div>
+            <fieldset class="feedback-rating"><legend>Насколько удобно пользоваться сайтом? <span class="small">(необязательно)</span></legend><div class="rating-options"><label><input type="radio" name="rating" value="1"><span>1</span></label><label><input type="radio" name="rating" value="2"><span>2</span></label><label><input type="radio" name="rating" value="3"><span>3</span></label><label><input type="radio" name="rating" value="4"><span>4</span></label><label><input type="radio" name="rating" value="5"><span>5</span></label></div></fieldset>
+            <div class="feedback-field"><label for="feedback-message">Твой отзыв</label><textarea id="feedback-message" rows="5" maxlength="1200" minlength="10" placeholder="Например: на телефоне трудно найти кнопку практики..." required></textarea><div class="feedback-meta"><span class="small">От 10 до 1200 символов</span><output id="feedback-count" for="feedback-message">0 / 1200</output></div></div>
+            <div class="feedback-actions"><button type="submit" class="button">Подготовить отзыв →</button><button type="reset" class="button ghost">Очистить</button></div>
+            <p class="small">Сайт учебный и работает без сервера. Отзыв не отправляется автоматически: после подготовки его можно скопировать или скачать.</p>
+          </form>
+          <aside class="feedback-aside"><span class="eyebrow">КАК ЭТО РАБОТАЕТ</span><h3>Твой голос важен</h3><p>Мы собираем идеи, которые помогают сделать материалы понятнее, а интерфейс — удобнее.</p><ol><li>Выбери тему обращения.</li><li>Напиши, что стоит изменить.</li><li>Подготовь отзыв и сохрани его удобным способом.</li></ol><p class="small">Не вводи фамилию, телефон, адрес и другую личную информацию.</p></aside>
+        </div>
+        <div class="card feedback-preview" id="feedback-preview" hidden tabindex="-1"><span class="eyebrow">ГОТОВО К КОПИРОВАНИЮ</span><h3>Твой отзыв подготовлен</h3><p class="small">Он пока никуда не отправлен. Скопируй текст или скачай файл, чтобы передать его автору сайта.</p><textarea id="feedback-output" rows="7" readonly aria-label="Подготовленный текст отзыва"></textarea><div class="feedback-actions"><button type="button" class="button" id="feedback-copy">Скопировать</button><button type="button" class="button ghost" id="feedback-download">Скачать TXT</button></div><p class="small" id="feedback-status" role="status"></p></div>
+      </section>
       <section class="section wrap about-section" id="about">
         <div>
           <span class="eyebrow">
@@ -1152,7 +1170,7 @@
               Кто видит мои записи и ответы?
             </summary>
             <p>
-              У сайта нет формы отправки данных на сервер. Заметки, ответы и план находятся в памяти открытой страницы и сбрасываются при её обновлении. Скачанные файлы остаются на твоём устройстве; на общем компьютере их могут увидеть другие пользователи.
+              Сайт не отправляет данные на сервер. Форма обратной связи лишь готовит текст для копирования или скачивания. Заметки, ответы и план находятся в памяти открытой страницы и сбрасываются при её обновлении. Скачанные файлы остаются на твоём устройстве; на общем компьютере их могут увидеть другие пользователи.
             </p>
           </details>
           <details>
@@ -1177,6 +1195,7 @@
         <p>
           Маленькие шаги. Больше внимания к себе.
         </p>
+        <a href="#feedback">Обратная связь</a>
         <a href="#home">
           Вернуться наверх ↑
         </a>

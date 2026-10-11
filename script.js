@@ -364,3 +364,48 @@ function notify(text) {
   toastTimeout = setTimeout(() => { $("#toast").hidden = true; }, 3500);
 }
 revealHashTarget();
+
+
+// 11. Обратная связь. Данные остаются на устройстве: без сервера отправка невозможна.
+const feedbackForm = $("#feedback-form");
+const feedbackMessage = $("#feedback-message");
+const feedbackPreview = $("#feedback-preview");
+const feedbackOutput = $("#feedback-output");
+feedbackMessage.addEventListener("input", () => {
+  $("#feedback-count").textContent = `${feedbackMessage.value.length} / 1200`;
+  feedbackPreview.hidden = true;
+});
+feedbackForm.addEventListener("change", () => { feedbackPreview.hidden = true; });
+feedbackForm.addEventListener("reset", () => {
+  feedbackPreview.hidden = true;
+  $("#feedback-count").textContent = "0 / 1200";
+});
+feedbackForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!feedbackForm.reportValidity()) return;
+  const kind = $("#feedback-kind").value;
+  const rating = feedbackForm.querySelector('input[name="rating"]:checked')?.value;
+  const message = feedbackMessage.value.trim();
+  if (message.length < 10) {
+    feedbackMessage.setCustomValidity("Напиши хотя бы 10 символов.");
+    feedbackMessage.reportValidity();
+    feedbackMessage.setCustomValidity("");
+    return;
+  }
+  feedbackOutput.value = `Отзыв о сайте «Рядом»\nТема: ${kind}\nОценка удобства: ${rating ? rating + " из 5" : "не указана"}\n\n${message}\n`;
+  feedbackPreview.hidden = false;
+  $("#feedback-status").textContent = "Отзыв подготовлен, но не отправлен.";
+  feedbackPreview.focus({preventScroll:true});
+  feedbackPreview.scrollIntoView({block:"nearest",behavior:"auto"});
+});
+$("#feedback-copy").addEventListener("click", async () => {
+  try {
+    if (!navigator.clipboard) throw new Error("Нет доступа к буферу обмена");
+    await navigator.clipboard.writeText(feedbackOutput.value);
+    $("#feedback-status").textContent = "Текст скопирован. Отправь его автору удобным способом.";
+  } catch {
+    feedbackOutput.focus(); feedbackOutput.select();
+    $("#feedback-status").textContent = "Текст выделен. Нажми Ctrl+C (или Cmd+C на Mac), чтобы скопировать.";
+  }
+});
+$("#feedback-download").addEventListener("click", () => downloadText("ryadom-feedback.txt", feedbackOutput.value));
